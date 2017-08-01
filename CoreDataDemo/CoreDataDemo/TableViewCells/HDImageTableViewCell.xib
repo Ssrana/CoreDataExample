@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="HDImageTableViewCell" customModule="HubblerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people_default" translatesAutoresizingMaskIntoConstraints="NO" id="9y2-Tq-uCh">
+                        <rect key="frame" x="21" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="DaI-4l-AgP"/>
+                            <constraint firstAttribute="width" constant="50" id="Ktf-Em-A8M"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePM-bh-7jo">
+                        <rect key="frame" x="21" y="0.0" width="50" height="82.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="lPD-Is-xBN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="editProfileImageButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Wff-8W-Awx"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJo-lE-UrB">
+                        <rect key="frame" x="92" y="15" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uy4-T5-BUT">
+                        <rect key="frame" x="92" y="37" width="207" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ehf-NX-25G"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <action selector="nameTextFieldEditingChanged:" destination="KGk-i7-Jjw" eventType="editingChanged" id="Pgd-dF-MQd"/>
+                            <action selector="nameTextFieldEditingDidBegin:" destination="KGk-i7-Jjw" eventType="editingDidBegin" id="9wu-jO-KB4"/>
+                            <action selector="nameTextFieldValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="GCy-pa-Iqn"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="Hxm-lm-QwU"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ePM-bh-7jo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="28U-BU-969"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aJo-lE-UrB" secondAttribute="trailing" constant="21" id="JGg-vl-Cf9"/>
+                    <constraint firstItem="Uy4-T5-BUT" firstAttribute="top" secondItem="aJo-lE-UrB" secondAttribute="bottom" constant="5" id="Uc8-Np-IkB"/>
+                    <constraint firstItem="aJo-lE-UrB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="W02-8E-tAW"/>
+                    <constraint firstItem="9y2-Tq-uCh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="XJ5-X4-cG3"/>
+                    <constraint firstItem="9y2-Tq-uCh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="ajV-h2-IRx"/>
+                    <constraint firstItem="aJo-lE-UrB" firstAttribute="leading" secondItem="ePM-bh-7jo" secondAttribute="trailing" constant="21" id="chn-Hh-hya"/>
+                    <constraint firstAttribute="trailing" secondItem="Uy4-T5-BUT" secondAttribute="trailing" constant="21" id="d03-Dn-Lo8"/>
+                    <constraint firstItem="ePM-bh-7jo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="g4P-zv-K6Q"/>
+                    <constraint firstAttribute="bottom" secondItem="ePM-bh-7jo" secondAttribute="bottom" constant="2" id="jNC-3e-t4l"/>
+                    <constraint firstItem="Uy4-T5-BUT" firstAttribute="leading" secondItem="ePM-bh-7jo" secondAttribute="trailing" constant="21" id="lEY-vb-rsp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="editButton" destination="ePM-bh-7jo" id="hoi-xE-aWy"/>
+                <outlet property="nameLabel" destination="aJo-lE-UrB" id="Jtq-gI-vpg"/>
+                <outlet property="nameTextField" destination="Uy4-T5-BUT" id="UrN-Ff-iI3"/>
+                <outlet property="profileIcon" destination="9y2-Tq-uCh" id="9ST-i8-Uqs"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="94.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="people_default" width="40" height="40"/>
+    </resources>
+</document>

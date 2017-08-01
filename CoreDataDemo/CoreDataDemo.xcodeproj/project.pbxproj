@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5541A981F2EF9840088D7DB /* Preferences+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5541A961F2EF9840088D7DB /* Preferences+CoreDataClass.swift */; };
+		C5541A991F2EF9840088D7DB /* Preferences+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5541A971F2EF9840088D7DB /* Preferences+CoreDataProperties.swift */; };
+		C5541A9E1F2F19570088D7DB /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5541A9C1F2F19570088D7DB /* Employee+CoreDataClass.swift */; };
+		C5541A9F1F2F19570088D7DB /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5541A9D1F2F19570088D7DB /* Employee+CoreDataProperties.swift */; };
+		C5541AAA1F2F3B140088D7DB /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5541AA91F2F3B140088D7DB /* AssetsLibrary.framework */; };
+		C55B8DA31F2FA04700F1B99C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D771F2FA04700F1B99C /* AppDelegate.swift */; };
+		C55B8DA41F2FA04700F1B99C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D781F2FA04700F1B99C /* Assets.xcassets */; };
+		C55B8DA51F2FA04700F1B99C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D791F2FA04700F1B99C /* LaunchScreen.storyboard */; };
+		C55B8DA61F2FA04700F1B99C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D7B1F2FA04700F1B99C /* Main.storyboard */; };
+		C55B8DA71F2FA04700F1B99C /* HDEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D7E1F2FA04700F1B99C /* HDEmployee.swift */; };
+		C55B8DA81F2FA04700F1B99C /* HDEmployeeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D7F1F2FA04700F1B99C /* HDEmployeeData.swift */; };
+		C55B8DA91F2FA04700F1B99C /* HDPreferencesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D801F2FA04700F1B99C /* HDPreferencesData.swift */; };
+		C55B8DAA1F2FA04700F1B99C /* HDDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D821F2FA04700F1B99C /* HDDateExtension.swift */; };
+		C55B8DAB1F2FA04700F1B99C /* HDTableDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D831F2FA04700F1B99C /* HDTableDataSet.swift */; };
+		C55B8DAC1F2FA04700F1B99C /* UIView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D841F2FA04700F1B99C /* UIView+Utility.swift */; };
+		C55B8DAE1F2FA04700F1B99C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D871F2FA04700F1B99C /* Info.plist */; };
+		C55B8DAF1F2FA04700F1B99C /* HDCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D891F2FA04700F1B99C /* HDCustomCell.swift */; };
+		C55B8DB01F2FA04700F1B99C /* HDEmployeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D8A1F2FA04700F1B99C /* HDEmployeTableViewCell.swift */; };
+		C55B8DB11F2FA04700F1B99C /* HDEmployeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D8B1F2FA04700F1B99C /* HDEmployeTableViewCell.xib */; };
+		C55B8DB21F2FA04700F1B99C /* HDImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D8C1F2FA04700F1B99C /* HDImageTableViewCell.swift */; };
+		C55B8DB31F2FA04700F1B99C /* HDImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D8D1F2FA04700F1B99C /* HDImageTableViewCell.xib */; };
+		C55B8DB41F2FA04700F1B99C /* HDTableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D8E1F2FA04700F1B99C /* HDTableSection.swift */; };
+		C55B8DB51F2FA04700F1B99C /* HDTableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D8F1F2FA04700F1B99C /* HDTableViewCellData.swift */; };
+		C55B8DB61F2FA04700F1B99C /* HDTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D901F2FA04700F1B99C /* HDTextFieldTableViewCell.swift */; };
+		C55B8DB71F2FA04700F1B99C /* HDTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D911F2FA04700F1B99C /* HDTextFieldTableViewCell.xib */; };
+		C55B8DB81F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D921F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.swift */; };
+		C55B8DB91F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D931F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.xib */; };
+		C55B8DBA1F2FA04700F1B99C /* HDTwoLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D941F2FA04700F1B99C /* HDTwoLabelTableViewCell.swift */; };
+		C55B8DBB1F2FA04700F1B99C /* HDTwoLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D951F2FA04700F1B99C /* HDTwoLabelTableViewCell.xib */; };
+		C55B8DBC1F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D971F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.swift */; };
+		C55B8DBD1F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D981F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.xib */; };
+		C55B8DBE1F2FA04700F1B99C /* HDEmployeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D991F2FA04700F1B99C /* HDEmployeeDetailsViewController.swift */; };
+		C55B8DBF1F2FA04700F1B99C /* HDEmployeeDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D9A1F2FA04700F1B99C /* HDEmployeeDetailsViewController.xib */; };
+		C55B8DC01F2FA04700F1B99C /* HDEmployeeImagePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D9B1F2FA04700F1B99C /* HDEmployeeImagePickerExtension.swift */; };
+		C55B8DC11F2FA04700F1B99C /* HDGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D9C1F2FA04700F1B99C /* HDGenderViewController.swift */; };
+		C55B8DC21F2FA04700F1B99C /* HDGenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D9D1F2FA04700F1B99C /* HDGenderViewController.xib */; };
+		C55B8DC31F2FA04700F1B99C /* HDHobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8D9E1F2FA04700F1B99C /* HDHobbiesViewController.swift */; };
+		C55B8DC41F2FA04700F1B99C /* HDHobbiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8D9F1F2FA04700F1B99C /* HDHobbiesViewController.xib */; };
+		C55B8DC51F2FA04700F1B99C /* HDMainTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8DA01F2FA04700F1B99C /* HDMainTableHeaderView.swift */; };
+		C55B8DC61F2FA04700F1B99C /* HDMainTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55B8DA11F2FA04700F1B99C /* HDMainTableHeaderView.xib */; };
+		C55B8DC71F2FA04700F1B99C /* HDMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B8DA21F2FA04700F1B99C /* HDMainViewController.swift */; };
+		C55B8DC81F2FA1D500F1B99C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5541AA51F2F232E0088D7DB /* AVFoundation.framework */; };
+		C55B8DCA1F2FA2EB00F1B99C /* CoreDataDemo.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C55B8DC91F2FA2EB00F1B99C /* CoreDataDemo.xcdatamodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5541A961F2EF9840088D7DB /* Preferences+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Preferences+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C5541A971F2EF9840088D7DB /* Preferences+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Preferences+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C5541A9C1F2F19570088D7DB /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C5541A9D1F2F19570088D7DB /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C5541AA11F2F23280088D7DB /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		C5541AA21F2F23280088D7DB /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		C5541AA51F2F232E0088D7DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C5541AA91F2F3B140088D7DB /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		C55B8D771F2FA04700F1B99C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C55B8D781F2FA04700F1B99C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C55B8D7A1F2FA04700F1B99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C55B8D7C1F2FA04700F1B99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C55B8D7E1F2FA04700F1B99C /* HDEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDEmployee.swift; sourceTree = "<group>"; };
+		C55B8D7F1F2FA04700F1B99C /* HDEmployeeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDEmployeeData.swift; sourceTree = "<group>"; };
+		C55B8D801F2FA04700F1B99C /* HDPreferencesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDPreferencesData.swift; sourceTree = "<group>"; };
+		C55B8D821F2FA04700F1B99C /* HDDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDDateExtension.swift; sourceTree = "<group>"; };
+		C55B8D831F2FA04700F1B99C /* HDTableDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDTableDataSet.swift; sourceTree = "<group>"; };
+		C55B8D841F2FA04700F1B99C /* UIView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utility.swift"; sourceTree = "<group>"; };
+		C55B8D871F2FA04700F1B99C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55B8D891F2FA04700F1B99C /* HDCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDCustomCell.swift; sourceTree = "<group>"; };
+		C55B8D8A1F2FA04700F1B99C /* HDEmployeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDEmployeTableViewCell.swift; sourceTree = "<group>"; };
+		C55B8D8B1F2FA04700F1B99C /* HDEmployeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDEmployeTableViewCell.xib; sourceTree = "<group>"; };
+		C55B8D8C1F2FA04700F1B99C /* HDImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDImageTableViewCell.swift; sourceTree = "<group>"; };
+		C55B8D8D1F2FA04700F1B99C /* HDImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDImageTableViewCell.xib; sourceTree = "<group>"; };
+		C55B8D8E1F2FA04700F1B99C /* HDTableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDTableSection.swift; sourceTree = "<group>"; };
+		C55B8D8F1F2FA04700F1B99C /* HDTableViewCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDTableViewCellData.swift; sourceTree = "<group>"; };
+		C55B8D901F2FA04700F1B99C /* HDTextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		C55B8D911F2FA04700F1B99C /* HDTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		C55B8D921F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDTwoLabelDatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		C55B8D931F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDTwoLabelDatePickerTableViewCell.xib; sourceTree = "<group>"; };
+		C55B8D941F2FA04700F1B99C /* HDTwoLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDTwoLabelTableViewCell.swift; sourceTree = "<group>"; };
+		C55B8D951F2FA04700F1B99C /* HDTwoLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDTwoLabelTableViewCell.xib; sourceTree = "<group>"; };
+		C55B8D971F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDAddEmployeeDetailsViewController.swift; sourceTree = "<group>"; };
+		C55B8D981F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDAddEmployeeDetailsViewController.xib; sourceTree = "<group>"; };
+		C55B8D991F2FA04700F1B99C /* HDEmployeeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDEmployeeDetailsViewController.swift; sourceTree = "<group>"; };
+		C55B8D9A1F2FA04700F1B99C /* HDEmployeeDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDEmployeeDetailsViewController.xib; sourceTree = "<group>"; };
+		C55B8D9B1F2FA04700F1B99C /* HDEmployeeImagePickerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDEmployeeImagePickerExtension.swift; sourceTree = "<group>"; };
+		C55B8D9C1F2FA04700F1B99C /* HDGenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDGenderViewController.swift; sourceTree = "<group>"; };
+		C55B8D9D1F2FA04700F1B99C /* HDGenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDGenderViewController.xib; sourceTree = "<group>"; };
+		C55B8D9E1F2FA04700F1B99C /* HDHobbiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDHobbiesViewController.swift; sourceTree = "<group>"; };
+		C55B8D9F1F2FA04700F1B99C /* HDHobbiesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDHobbiesViewController.xib; sourceTree = "<group>"; };
+		C55B8DA01F2FA04700F1B99C /* HDMainTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDMainTableHeaderView.swift; sourceTree = "<group>"; };
+		C55B8DA11F2FA04700F1B99C /* HDMainTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDMainTableHeaderView.xib; sourceTree = "<group>"; };
+		C55B8DA21F2FA04700F1B99C /* HDMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDMainViewController.swift; sourceTree = "<group>"; };
+		C55B8DC91F2FA2EB00F1B99C /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
+		C560FE751F2A3D7B004486C5 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C560FE721F2A3D7B004486C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55B8DC81F2FA1D500F1B99C /* AVFoundation.framework in Frameworks */,
+				C5541AAA1F2F3B140088D7DB /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5541AA01F2F23280088D7DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5541AA91F2F3B140088D7DB /* AssetsLibrary.framework */,
+				C5541AA51F2F232E0088D7DB /* AVFoundation.framework */,
+				C5541AA11F2F23280088D7DB /* Photos.framework */,
+				C5541AA21F2F23280088D7DB /* PhotosUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C55B8D761F2FA04700F1B99C /* CoreDataDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C55B8DC91F2FA2EB00F1B99C /* CoreDataDemo.xcdatamodel */,
+				C55B8D771F2FA04700F1B99C /* AppDelegate.swift */,
+				C55B8D781F2FA04700F1B99C /* Assets.xcassets */,
+				C55B8D791F2FA04700F1B99C /* LaunchScreen.storyboard */,
+				C55B8D7B1F2FA04700F1B99C /* Main.storyboard */,
+				C55B8D7D1F2FA04700F1B99C /* Employee Data */,
+				C55B8D811F2FA04700F1B99C /* Extensions */,
+				C55B8D871F2FA04700F1B99C /* Info.plist */,
+				C55B8D881F2FA04700F1B99C /* TableViewCells */,
+				C55B8D961F2FA04700F1B99C /* ViewController */,
+			);
+			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		C55B8D7D1F2FA04700F1B99C /* Employee Data */ = {
+			isa = PBXGroup;
+			children = (
+				C55B8D7E1F2FA04700F1B99C /* HDEmployee.swift */,
+				C55B8D7F1F2FA04700F1B99C /* HDEmployeeData.swift */,
+				C55B8D801F2FA04700F1B99C /* HDPreferencesData.swift */,
+			);
+			path = "Employee Data";
+			sourceTree = "<group>";
+		};
+		C55B8D811F2FA04700F1B99C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C55B8D821F2FA04700F1B99C /* HDDateExtension.swift */,
+				C55B8D831F2FA04700F1B99C /* HDTableDataSet.swift */,
+				C55B8D841F2FA04700F1B99C /* UIView+Utility.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C55B8D881F2FA04700F1B99C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C55B8D891F2FA04700F1B99C /* HDCustomCell.swift */,
+				C55B8D8A1F2FA04700F1B99C /* HDEmployeTableViewCell.swift */,
+				C55B8D8B1F2FA04700F1B99C /* HDEmployeTableViewCell.xib */,
+				C55B8D8C1F2FA04700F1B99C /* HDImageTableViewCell.swift */,
+				C55B8D8D1F2FA04700F1B99C /* HDImageTableViewCell.xib */,
+				C55B8D8E1F2FA04700F1B99C /* HDTableSection.swift */,
+				C55B8D8F1F2FA04700F1B99C /* HDTableViewCellData.swift */,
+				C55B8D901F2FA04700F1B99C /* HDTextFieldTableViewCell.swift */,
+				C55B8D911F2FA04700F1B99C /* HDTextFieldTableViewCell.xib */,
+				C55B8D921F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.swift */,
+				C55B8D931F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.xib */,
+				C55B8D941F2FA04700F1B99C /* HDTwoLabelTableViewCell.swift */,
+				C55B8D951F2FA04700F1B99C /* HDTwoLabelTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		C55B8D961F2FA04700F1B99C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C55B8D971F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.swift */,
+				C55B8D981F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.xib */,
+				C55B8D991F2FA04700F1B99C /* HDEmployeeDetailsViewController.swift */,
+				C55B8D9A1F2FA04700F1B99C /* HDEmployeeDetailsViewController.xib */,
+				C55B8D9B1F2FA04700F1B99C /* HDEmployeeImagePickerExtension.swift */,
+				C55B8D9C1F2FA04700F1B99C /* HDGenderViewController.swift */,
+				C55B8D9D1F2FA04700F1B99C /* HDGenderViewController.xib */,
+				C55B8D9E1F2FA04700F1B99C /* HDHobbiesViewController.swift */,
+				C55B8D9F1F2FA04700F1B99C /* HDHobbiesViewController.xib */,
+				C55B8DA01F2FA04700F1B99C /* HDMainTableHeaderView.swift */,
+				C55B8DA11F2FA04700F1B99C /* HDMainTableHeaderView.xib */,
+				C55B8DA21F2FA04700F1B99C /* HDMainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C560FE6C1F2A3D7B004486C5 = {
+			isa = PBXGroup;
+			children = (
+				C55B8D761F2FA04700F1B99C /* CoreDataDemo */,
+				C5541A9C1F2F19570088D7DB /* Employee+CoreDataClass.swift */,
+				C5541A9D1F2F19570088D7DB /* Employee+CoreDataProperties.swift */,
+				C5541A961F2EF9840088D7DB /* Preferences+CoreDataClass.swift */,
+				C5541A971F2EF9840088D7DB /* Preferences+CoreDataProperties.swift */,
+				C560FE761F2A3D7B004486C5 /* Products */,
+				C5541AA01F2F23280088D7DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C560FE761F2A3D7B004486C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C560FE751F2A3D7B004486C5 /* CoreDataDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C560FE741F2A3D7B004486C5 /* CoreDataDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C560FE8A1F2A3D7B004486C5 /* Build configuration list for PBXNativeTarget "CoreDataDemo" */;
+			buildPhases = (
+				C560FE711F2A3D7B004486C5 /* Sources */,
+				C560FE721F2A3D7B004486C5 /* Frameworks */,
+				C560FE731F2A3D7B004486C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataDemo;
+			productName = HubblerDemo;
+			productReference = C560FE751F2A3D7B004486C5 /* CoreDataDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C560FE6D1F2A3D7B004486C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = demo;
+				TargetAttributes = {
+					C560FE741F2A3D7B004486C5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = C560FE701F2A3D7B004486C5 /* Build configuration list for PBXProject "CoreDataDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C560FE6C1F2A3D7B004486C5;
+			productRefGroup = C560FE761F2A3D7B004486C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C560FE741F2A3D7B004486C5 /* CoreDataDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C560FE731F2A3D7B004486C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55B8DAE1F2FA04700F1B99C /* Info.plist in Resources */,
+				C55B8DC41F2FA04700F1B99C /* HDHobbiesViewController.xib in Resources */,
+				C55B8DB31F2FA04700F1B99C /* HDImageTableViewCell.xib in Resources */,
+				C55B8DBB1F2FA04700F1B99C /* HDTwoLabelTableViewCell.xib in Resources */,
+				C55B8DA61F2FA04700F1B99C /* Main.storyboard in Resources */,
+				C55B8DB91F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.xib in Resources */,
+				C55B8DBD1F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.xib in Resources */,
+				C55B8DA41F2FA04700F1B99C /* Assets.xcassets in Resources */,
+				C55B8DB11F2FA04700F1B99C /* HDEmployeTableViewCell.xib in Resources */,
+				C55B8DA51F2FA04700F1B99C /* LaunchScreen.storyboard in Resources */,
+				C55B8DBF1F2FA04700F1B99C /* HDEmployeeDetailsViewController.xib in Resources */,
+				C55B8DB71F2FA04700F1B99C /* HDTextFieldTableViewCell.xib in Resources */,
+				C55B8DC21F2FA04700F1B99C /* HDGenderViewController.xib in Resources */,
+				C55B8DC61F2FA04700F1B99C /* HDMainTableHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C560FE711F2A3D7B004486C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5541A981F2EF9840088D7DB /* Preferences+CoreDataClass.swift in Sources */,
+				C55B8DC31F2FA04700F1B99C /* HDHobbiesViewController.swift in Sources */,
+				C55B8DA81F2FA04700F1B99C /* HDEmployeeData.swift in Sources */,
+				C55B8DBE1F2FA04700F1B99C /* HDEmployeeDetailsViewController.swift in Sources */,
+				C55B8DAC1F2FA04700F1B99C /* UIView+Utility.swift in Sources */,
+				C55B8DA91F2FA04700F1B99C /* HDPreferencesData.swift in Sources */,
+				C55B8DBA1F2FA04700F1B99C /* HDTwoLabelTableViewCell.swift in Sources */,
+				C5541A991F2EF9840088D7DB /* Preferences+CoreDataProperties.swift in Sources */,
+				C5541A9E1F2F19570088D7DB /* Employee+CoreDataClass.swift in Sources */,
+				C55B8DAB1F2FA04700F1B99C /* HDTableDataSet.swift in Sources */,
+				C55B8DB41F2FA04700F1B99C /* HDTableSection.swift in Sources */,
+				C55B8DBC1F2FA04700F1B99C /* HDAddEmployeeDetailsViewController.swift in Sources */,
+				C55B8DB81F2FA04700F1B99C /* HDTwoLabelDatePickerTableViewCell.swift in Sources */,
+				C55B8DA31F2FA04700F1B99C /* AppDelegate.swift in Sources */,
+				C55B8DCA1F2FA2EB00F1B99C /* CoreDataDemo.xcdatamodel in Sources */,
+				C55B8DB01F2FA04700F1B99C /* HDEmployeTableViewCell.swift in Sources */,
+				C5541A9F1F2F19570088D7DB /* Employee+CoreDataProperties.swift in Sources */,
+				C55B8DAA1F2FA04700F1B99C /* HDDateExtension.swift in Sources */,
+				C55B8DB51F2FA04700F1B99C /* HDTableViewCellData.swift in Sources */,
+				C55B8DA71F2FA04700F1B99C /* HDEmployee.swift in Sources */,
+				C55B8DC01F2FA04700F1B99C /* HDEmployeeImagePickerExtension.swift in Sources */,
+				C55B8DB61F2FA04700F1B99C /* HDTextFieldTableViewCell.swift in Sources */,
+				C55B8DAF1F2FA04700F1B99C /* HDCustomCell.swift in Sources */,
+				C55B8DC71F2FA04700F1B99C /* HDMainViewController.swift in Sources */,
+				C55B8DB21F2FA04700F1B99C /* HDImageTableViewCell.swift in Sources */,
+				C55B8DC11F2FA04700F1B99C /* HDGenderViewController.swift in Sources */,
+				C55B8DC51F2FA04700F1B99C /* HDMainTableHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C55B8D791F2FA04700F1B99C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55B8D7A1F2FA04700F1B99C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C55B8D7B1F2FA04700F1B99C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55B8D7C1F2FA04700F1B99C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C560FE881F2A3D7B004486C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C560FE891F2A3D7B004486C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C560FE8B1F2A3D7B004486C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CoreDataDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C560FE8C1F2A3D7B004486C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CoreDataDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C560FE701F2A3D7B004486C5 /* Build configuration list for PBXProject "CoreDataDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C560FE881F2A3D7B004486C5 /* Debug */,
+				C560FE891F2A3D7B004486C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C560FE8A1F2A3D7B004486C5 /* Build configuration list for PBXNativeTarget "CoreDataDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C560FE8B1F2A3D7B004486C5 /* Debug */,
+				C560FE8C1F2A3D7B004486C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C560FE6D1F2A3D7B004486C5 /* Project object */;
+}

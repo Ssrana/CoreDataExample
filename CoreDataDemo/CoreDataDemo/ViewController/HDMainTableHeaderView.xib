@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HDMainTableHeaderView" customModule="HubblerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Employees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQc-nv-BX4">
+                    <rect key="frame" x="21" y="10" width="125" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JP-P5-ydo">
+                    <rect key="frame" x="21" y="34" width="21.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bD-Rq-iup">
+                    <rect key="frame" x="21" y="73" width="354" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="NvQ-Dv-84I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todays Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmS-yb-STt">
+                    <rect key="frame" x="21" y="89" width="88" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-xp-Buw">
+                    <rect key="frame" x="323" y="80.5" width="31" height="32.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Sort"/>
+                    <connections>
+                        <action selector="sortByButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="3Ye-rG-S9a"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.20392156862745098" green="0.54117647058823526" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LQc-nv-BX4" secondAttribute="trailing" constant="21" id="5Bi-8n-qYb"/>
+                <constraint firstItem="LQc-nv-BX4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="8bF-1D-Omp"/>
+                <constraint firstItem="6JP-P5-ydo" firstAttribute="leading" secondItem="LQc-nv-BX4" secondAttribute="leading" id="A29-Kc-e7t"/>
+                <constraint firstAttribute="trailing" secondItem="2bD-Rq-iup" secondAttribute="trailing" id="Jl6-vr-miK"/>
+                <constraint firstItem="2bD-Rq-iup" firstAttribute="leading" secondItem="LQc-nv-BX4" secondAttribute="leading" id="ZnZ-4J-fvz"/>
+                <constraint firstAttribute="trailing" secondItem="ehV-xp-Buw" secondAttribute="trailing" constant="21" id="ZzU-54-nY0"/>
+                <constraint firstAttribute="bottom" secondItem="MmS-yb-STt" secondAttribute="bottom" constant="15" id="aej-Wg-C4c"/>
+                <constraint firstItem="6JP-P5-ydo" firstAttribute="top" secondItem="LQc-nv-BX4" secondAttribute="bottom" constant="3" id="aq2-LG-r3U"/>
+                <constraint firstItem="2bD-Rq-iup" firstAttribute="top" secondItem="6JP-P5-ydo" secondAttribute="bottom" constant="15" id="dvv-IR-DIV"/>
+                <constraint firstItem="MmS-yb-STt" firstAttribute="leading" secondItem="6JP-P5-ydo" secondAttribute="leading" id="ek5-ph-z9F"/>
+                <constraint firstItem="ehV-xp-Buw" firstAttribute="top" secondItem="2bD-Rq-iup" secondAttribute="bottom" constant="7" id="v1p-qx-Moh"/>
+                <constraint firstItem="LQc-nv-BX4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="xOt-qk-1rc"/>
+                <constraint firstAttribute="bottom" secondItem="ehV-xp-Buw" secondAttribute="bottom" constant="7" id="zL0-TI-JGS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="employeeCount" destination="6JP-P5-ydo" id="igk-ff-ijh"/>
+                <outlet property="sortByButton" destination="ehV-xp-Buw" id="y1I-3U-Eus"/>
+                <outlet property="todaysReport" destination="MmS-yb-STt" id="nfc-2A-KwA"/>
+                <outlet property="totalEmployeesHeaderLabel" destination="LQc-nv-BX4" id="uFS-LZ-Kg9"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="131"/>
+        </view>
+    </objects>
+</document>
