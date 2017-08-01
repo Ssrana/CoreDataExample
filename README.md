@@ -1,5 +1,6 @@
 # CoreDataExample
 The project is made with following requirements:
+
  1.The app will land in a page listing all the records you have created with monitor on top. (First time it will be empty).
  2. User will click the "+" button on top it will open one view having fields like (*see the attachments 02 Screen.png)
   i.  Profile pic, It will pick image from gallery or capture image using mobile camera. (Required field)
